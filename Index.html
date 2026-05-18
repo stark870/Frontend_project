@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <style>
+    /* .carousel{
+       margin: 100px;
+      } */
+    .carousel .img {
+      height: 100%;
+    }
+
+    .row { 
+      background-color: rgb(214, 243, 233);
+      height: 60px;
+      text-align: center;
+
+    }
+
+    .cat {
+      height: 300px;
+      border-radius: 10px;
+      margin: 30px;
+    }
+
+    #catog {
+      height: 360px;
+      /* width: 1200px; */
+
+      /* margin-left: 60px; */
+    }
+
+    #catog2 {
+      height: 360px;
+      margin-left: 20px;
+      display: flex;
+
+    }
+
+    .cat2 {
+      height: 300px;
+      margin: 40px;
+      border-radius: 10px;
+
+    }
+
+    .gcat {
+      height: 300px;
+      margin: 20px;
+      border-radius: 10px;
+    }
+
+    .gcat2 {
+      height: 300px;
+      margin: 40px;
+      border-radius: 10px;
+    }
+
+    #gcatmain {
+      height: 360px;
+
+      display: block;
+
+    }
+
+    #menshowmore {
+      height: 200px;
+      border: 1px solid;
+      width: 150px;
+      margin-top: 80px;
+      margin-left: 50px;
+      border-radius: 10px;
+    }
+
+    #fafa {
+      margin-top: 60px;
+      margin-left: 45px;
+
+    }
+
+    #bt1 {
+      margin-left: 30px;
+      background-color: blue;
+      border-radius: 10px;
+      width: 100px;
+      color: white;
+      border: none;
+      outline: none;
+    }
+
+    .logo {
+      height: 500px;
+      width: 700px;
+      margin-left: 400px;
+      margin-top: 150px;
+    }
+
+    #marq {
+      background-color: rgb(8, 8, 8);
+      color: white;
+    }
+
+    .cat:hover {
+      box-shadow: 0px 0px 10px black;
+    }
+
+    .cat2:hover {
+      box-shadow: 0px 0px 10px black;
+    }
+
+    .gcat:hover {
+      box-shadow: 0px 0px 10px black;
+    }
+
+    .gcat2:hover {
+      box-shadow: 0px 0px 10px black;
+    }
+
+    nav {
+      height: 100px;
+      /* background-color: ; */
+    }
+
+    .btn {
+      background-color: white;
+    }
+
+    #tog {
+      display: none;
+      padding-top: 50px;
+      border: 2px solid;
+      /* height: 100px; */
+      /* width: 200px; */
+      /* padding-left: 1100px; */
+      margin-left: 1100px;
+      background-color: black;
+
+    }
+
+    #togbt1 {
+      /* margin-top: 14px; */
+      margin-left: 20px;
+      width: 195px;
+      background-color: white;
+      border-radius: 10px;
+    }
+
+    #togbt2 {
+      margin-left: 20px;
+      width: 195px;
+      border-radius: 10px;
+      background-color: white;
+
+    }
+
+    #togdiv {
+      padding-top: 80px;
+      border: 2px solid;
+      
+      margin-left: 1100px;
+      background-color: rgb(8, 8, 8);
+      
+    }
+    #close{
+      background-color: rgb(250, 253, 253);
+      width: 50px;
+      margin-left: 180px;
+      margin-bottom: 10px;
+    }
+    #about{
+      width: 1200px;
+      /* border: 2px solid; */
+      margin: auto;
+      height: 600px;
+      display: flex;
+      background-color: rgb(136, 231, 199);
+      border-radius: 20px;
+
+    }
+    #aboutp{
+      height: 550px;
+      width: 700px;
+      margin-left: 120px;
+      margin-top: 25px;
+    }
+    #aboutp h3{
+      margin-top: 100px;
+     
+    }
+  </style>
+</head>
+
+<body>
+  <nav id="navbar-example2" class="navbar navbar-light bg-dark px-3  fixed-top">
+
+    <ul class="nav nav-pills" style="margin-left: 50px;">
+      <li class="nav-item">
+        <a class="nav-link" href="#scrollspyHeading1" style="color: white; font-size: 30px; "><b>Home</b></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#scrollspyHeading2" style="color: white; font-size: 30px; "><b>Men</b></a>
+      </li>
+      <a class="nav-link" href="#scrollspyHeading3" style="color: white; font-size: 30px; "><b>womans</b></a>
+      </li>
+      <a class="nav-link" href="#scrollspyHeading4" style="color: white; font-size: 30px; "><b>About</b></a>
+      </li>
+    </ul>
+
+    <button id="togmain"><i class="fa fa-reorder"
+        style="font-size:36px;color:black; background-color: rgb(240, 239, 239); border: none;"></i></button>
+
+
+
+
+
+
+  </nav>
+  
+
+
+
+  <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+   
+    <!-- <div id="togdiv">
+   </div> -->
+<!-- <div id="tog" style="height:200px;width: 245px;">
+     
+    
+    <a href="men.html"><button id="togbt1">Mens</button></a><br><br>
+    <a href="woman.html"><button id="togbt2" >Womans</button></a><br><br>
+    <button id="close">close</button>
+  </div> -->
+
+
+    <div class="logo" id="scrollspyHeading1">
+      <img src="s.jpg" style="margin-left: 70px;">
+      <img src="LOGO3.png" style="margin-left: 20px;">
+      <p style=" font-size: 20px;">💠𝘍𝘪𝘯𝘥 𝘺𝘰𝘶𝘳 𝘱𝘦𝘳𝘧𝘦𝘤𝘵 𝘭𝘰𝘰𝘬 💠 𝘞𝘦𝘢𝘳 𝘤𝘰𝘯𝘧𝘪𝘥𝘦𝘯𝘤𝘦, 𝘕𝘰𝘵
+        𝘫𝘶𝘴𝘵 𝘤𝘭𝘰𝘵𝘩𝘦𝘴</p>
+    </div>
+    <br>
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img src="land.jpg" class="d-block w-100" alt="..." style="height: 650px;">
+          <div class="carousel-caption d-none d-md-block">
+
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="land2.jpg" class="d-block w-100" style="height: 650px;">
+          <div class="carousel-caption d-none d-md-block">
+
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="land3.jpg" class="d-block w-100" alt="..." style="height: 650px;">
+          <div class="carousel-caption d-none d-md-block">
+
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+
+  <marquee id="marq" direction="left">
+    <h1><i class="fa fa-truck" style="font-size:24px"></i> Free
+      shipping&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      🔁 7 Day's in Return
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;💸 COD Available
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;💯% Trustable</h1>
+  </marquee>
+  </div>
+  <br><br>
+  <h2 id="scrollspyHeading2" style="text-align: center;"> Featured Catogories</h2>
+
+  <div id="catog" st>
+    <img src="shirt1.jpeg" class="cat">
+    <img src="tshirt1.jpeg" class="cat">
+    <img src="coat1.jpeg" class="cat">
+    <img src="jean3.jpg" class="cat">
+
+  </div>
+  <div id="catog2">
+
+    <img src="shots1.jpeg" class="cat2">
+    <img src="shoe1.jpeg" class="cat2">
+    <img src="glass2.jpeg" class="cat2">
+    <div id="menshowmore">
+      <a href="men.html"><i class="fa fa-sign-in" style="font-size:50px;" id="fafa"></i><br><br>
+        <a href="men.html"></a><button id="bt1">Show more</button></a>
+    </div>
+  </div>
+  </div>
+
+  <BR><BR></BR></BR>
+
+  <h4 id="scrollspyHeading3">
+    <center>WOMANS</center>
+  </h4>
+  <div id="gcatmain">
+    <img src="img5.jpeg" class="gcat">
+    <img src="img6.jpeg" class="gcat">
+    <img src="frok2.jpg" class="gcat">
+    <img src="kurti1.jpg" class="gcat">
+    <img src="frok1.jpg" class="gcat">
+
+
+  </div>
+  <div id="gcatmain2" style="display: flex;">
+    <img src="gcoat.jpg" class="gcat2">
+    <img src="churithar.jpg" class="gcat2">
+
+    <img src="top.jpg" class="gcat2">
+    <img src="gjeans.jpg" class="gcat2">
+
+    <div id="menshowmore" style="margin-left: 60px;">
+      <a href="woman.html"><i class="fa fa-sign-in" style="font-size:50px;" id="fafa"></i><br><br>
+        <a href="woman.html"><button id="bt1">Show more</button></a></a>
+    </div>
+  </div>
+  <br><br>
+  <h4 id="scrollspyHeading4"><center></center></h4>
+  <div id="about">
+    <div ><img src="about1.jpeg" alt="" style="height: 550px; margin-top: 25px; margin-left: 40px; border-radius: 10px;"></div>
+    <div id="aboutp">
+      <h3><center><b>𝐀𝐛𝐨𝐮𝐭</b></center></h3><br><br> 
+      <p>✨ 𝘼𝙗𝙤𝙪𝙩 𝙁𝙖𝙨𝙝𝙞𝙤𝙣 𝙕𝙤𝙣𝙚
+𝙁𝙖𝙨𝙝𝙞𝙤𝙣 𝙕𝙤𝙣𝙚 𝙞𝙨 𝙖 𝙢𝙤𝙙𝙚𝙧𝙣 𝙘𝙡𝙤𝙩𝙝𝙞𝙣𝙜 𝙗𝙧𝙖𝙣𝙙 𝙘𝙤𝙣𝙘𝙚𝙥𝙩 𝙘𝙧𝙚𝙖𝙩𝙚𝙙 𝙩𝙤 𝙗𝙧𝙞𝙣𝙜 𝙨𝙩𝙮𝙡𝙚, 𝙘𝙤𝙢𝙛𝙤𝙧𝙩, 𝙖𝙣𝙙 𝙘𝙤𝙣𝙛𝙞𝙙𝙚𝙣𝙘𝙚 𝙩𝙤𝙜𝙚𝙩𝙝𝙚𝙧. 𝙊𝙪𝙧 𝙫𝙞𝙨𝙞𝙤𝙣 𝙞𝙨 𝙩𝙤 𝙥𝙧𝙤𝙫𝙞𝙙𝙚 𝙩𝙧𝙚𝙣𝙙𝙮 𝙖𝙣𝙙 𝙝𝙞𝙜𝙝-𝙦𝙪𝙖𝙡𝙞𝙩𝙮 𝙤𝙪𝙩𝙛𝙞𝙩𝙨 𝙩𝙝𝙖𝙩 𝙨𝙪𝙞𝙩 𝙚𝙫𝙚𝙧𝙮 𝙥𝙚𝙧𝙨𝙤𝙣𝙖𝙡𝙞𝙩𝙮 𝙖𝙣𝙙 𝙤𝙘𝙘𝙖𝙨𝙞𝙤𝙣</p>
+    <br>
+    <p>𝘼𝙩 𝙁𝙖𝙨𝙝𝙞𝙤𝙣 𝙕𝙤𝙣𝙚, 𝙬𝙚 𝙗𝙚𝙡𝙞𝙚𝙫𝙚 𝙛𝙖𝙨𝙝𝙞𝙤𝙣 𝙞𝙨 𝙖 𝙬𝙖𝙮 𝙩𝙤 𝙚𝙭𝙥𝙧𝙚𝙨𝙨 𝙞𝙣𝙙𝙞𝙫𝙞𝙙𝙪𝙖𝙡𝙞𝙩𝙮. 𝙏𝙝𝙖𝙩’𝙨 𝙬𝙝𝙮 𝙤𝙪𝙧 𝙙𝙚𝙨𝙞𝙜𝙣𝙨 𝙘𝙤𝙢𝙗𝙞𝙣𝙚 𝙩𝙝𝙚 𝙡𝙖𝙩𝙚𝙨𝙩 𝙩𝙧𝙚𝙣𝙙𝙨 𝙬𝙞𝙩𝙝 𝙩𝙞𝙢𝙚𝙡𝙚𝙨𝙨 𝙨𝙩𝙮𝙡𝙚𝙨, 𝙢𝙖𝙠𝙞𝙣𝙜 𝙨𝙪𝙧𝙚 𝙚𝙫𝙚𝙧𝙮𝙤𝙣𝙚 𝙘𝙖𝙣 𝙛𝙞𝙣𝙙 𝙨𝙤𝙢𝙚𝙩𝙝𝙞𝙣𝙜 𝙩𝙝𝙖𝙩 𝙧𝙚𝙛𝙡𝙚𝙘𝙩𝙨 𝙩𝙝𝙚𝙞𝙧 𝙪𝙣𝙞𝙦𝙪𝙚 𝙩𝙖𝙨𝙩𝙚.</p>
+</div>
+  </div>
+  <br>
+  <div id="about">
+    <div id="aboutp2">
+       
+
+   <p style="margin-top: 150px; text-align: center;">✨𝙁𝙧𝙤𝙢 𝙘𝙖𝙨𝙪𝙖𝙡 𝙬𝙚𝙖𝙧 𝙩𝙤 𝙨𝙩𝙮𝙡𝙞𝙨𝙝 𝙨𝙩𝙖𝙩𝙚𝙢𝙚𝙣𝙩 𝙥𝙞𝙚𝙘𝙚𝙨,<br> 𝙁𝙖𝙨𝙝𝙞𝙤𝙣 𝙕𝙤𝙣𝙚 𝙛𝙤𝙘𝙪𝙨𝙚𝙨 𝙤𝙣 𝙙𝙚𝙡𝙞𝙫𝙚𝙧𝙞𝙣𝙜 𝙛𝙖𝙨𝙝𝙞𝙤𝙣 𝙩𝙝𝙖𝙩 𝙞𝙨 𝙗𝙤𝙩𝙝 𝙖𝙛𝙛𝙤𝙧𝙙𝙖𝙗𝙡𝙚 𝙖𝙣𝙙 𝙚𝙡𝙚𝙜𝙖𝙣𝙩. <br>𝙊𝙪𝙧 𝙜𝙤𝙖𝙡 𝙞𝙨 𝙩𝙤 𝙢𝙖𝙠𝙚 𝙚𝙫𝙚𝙧𝙮 𝙘𝙪𝙨𝙩𝙤𝙢𝙚𝙧 𝙛𝙚𝙚𝙡 𝙘𝙤𝙣𝙛𝙞𝙙𝙚𝙣𝙩, 𝙘𝙤𝙢𝙛𝙤𝙧𝙩𝙖𝙗𝙡𝙚, 𝙖𝙣𝙙 𝙛𝙖𝙨𝙝𝙞𝙤𝙣𝙖𝙗𝙡𝙚 𝙚𝙫𝙚𝙧𝙮 𝙙𝙖𝙮.✨</p>
+      <br>
+      <p style="text-align: center;">✨𝙒𝙚 𝙗𝙚𝙡𝙞𝙚𝙫𝙚 𝙩𝙧𝙪𝙚 𝙡𝙪𝙭𝙪𝙧𝙮 𝙡𝙞𝙚𝙨 𝙞𝙣 𝙝𝙤𝙬 𝙮𝙤𝙪 𝙛𝙚𝙚𝙡. <br>𝙏𝙝𝙖𝙩’𝙨 𝙬𝙝𝙮 𝙤𝙪𝙧 𝙙𝙚𝙨𝙞𝙜𝙣𝙨 𝙖𝙧𝙚 𝙘𝙧𝙚𝙖𝙩𝙚𝙙 𝙩𝙤 𝙚𝙢𝙥𝙤𝙬𝙚𝙧 𝙞𝙣𝙙𝙞𝙫𝙞𝙙𝙪𝙖𝙡𝙞𝙩𝙮, 𝙚𝙡𝙚𝙫𝙖𝙩𝙚 𝙘𝙤𝙣𝙛𝙞𝙙𝙚𝙣𝙘𝙚,<br> 𝙖𝙣𝙙 𝙢𝙖𝙠𝙚 𝙚𝙫𝙚𝙧𝙮 𝙢𝙤𝙢𝙚𝙣𝙩 𝙛𝙚𝙚𝙡 𝙚𝙭𝙘𝙚𝙥𝙩𝙞𝙤𝙣𝙖𝙡.
+<br> 𝙁𝙖𝙨𝙝𝙞𝙤𝙣 𝙕𝙤𝙣𝙚 𝙞𝙨 𝙣𝙤𝙩 𝙟𝙪𝙨𝙩 𝙖 𝙗𝙧𝙖𝙣𝙙 — 𝙞𝙩 𝙞𝙨 𝙖 𝙨𝙩𝙖𝙩𝙚𝙢𝙚𝙣𝙩 𝙤𝙛 𝙘𝙡𝙖𝙨𝙨, 𝙞𝙙𝙚𝙣𝙩𝙞𝙩𝙮, 𝙖𝙣𝙙 𝙚𝙛𝙛𝙤𝙧𝙩𝙡𝙚𝙨𝙨 𝙨𝙩𝙮𝙡𝙚.✨</p>
+  </div>
+    <div ><img src="about2.jpeg" alt="" style="height: 550px; margin-top: 25px; margin-left: 150px; border-radius: 10px;"></div>
+
+  </div>
+  <!-- <h4 id="scrollspyHeading5">Fifth heading</h4>
+  <p>...</p> -->
+  </div>
+
+
+
+
+  <script>
+   
+     $(document).ready(function(){
+            // $("#close").click(function(){
+            //     $("#tog").slideUp(3000)
+            // })
+            $("#togmain").click(function(){
+                $("#tog").slidedown(3000)    
+      })
+    })
+  </script>
+
+</body>
+
+</html>

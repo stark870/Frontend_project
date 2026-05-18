@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #main {
+            height: 700px;
+            width: 1200px;
+            background-color: beige;
+            margin: auto;
+            display: flex;
+        }
+
+        #sub1 {
+            height: 700px;
+            width: 600px;
+            /* background-color: aqua; */
+        }
+
+        #h {
+            text-align: center;
+            margin-top: 100px;
+
+        }
+
+        #address {
+            height: 350px;
+            width: 500px;
+            border: 2px solid;
+        }
+
+        /* #inp1{
+            margin-top: 50px;
+        } */
+        #inp1 {
+            margin-top: 50px;
+            border: 1px solid;
+            height: 20px;
+        }
+
+        #inp2 {
+            height: 20px;
+
+            border: 1px solid;
+        }
+
+        #inp3 {
+            height: 20px;
+
+            border: 1px solid;
+        }
+
+        #text {
+            height: 50px;
+            border: 1px solid;
+        }
+
+        #inp4 {
+            border: 1px solid;
+            height: 20px;
+        }
+
+
+        .bt {
+            margin: 15px;
+        }
+
+      
+
+        #text:hover {
+            box-shadow: 0px 0px 10px grey;
+        }
+
+        #con:hover {
+            box-shadow: 0px 0px 10px grey;
+        }
+
+       
+        input:hover{
+            box-shadow: 0px 0px 10px grey;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="main">
+        <div id="sub1"><img src="shirt1.jpeg" alt="" style=" height: 500px; margin-left: 50px; margin-top: 150px;">
+        </div>
+        <div id="sub2">
+            <h2 id="h">
+                <center><u>Men's Beach Casual Cotton Shirt</u></center>
+            </h2>
+            <div id="subdiv">
+                <h2></h2>
+
+                <span>
+                    <h3><b>Price : ₹ 499 <br>Size: <button class="bt">S</button><button class="bt">M</button><button
+                                class="bt">L</button><br>Fabric : Cotton <br> Sleeve : Fullsleeve</b></h3>
+
+                </span>
+
+
+            </div>
+
+            <div id="address">
+                <input type="text" placeholder="Name " id="inp1" style="margin-left: 50px; "><span id="name"></span><br><br>
+                <input type="text" placeholder="phone number" id="inp2" style="margin-left: 50px;"> <span
+                    id="number"></span><br><br>
+                <input type="email" placeholder="Email" id="inp3" style="margin-left: 50px;"> <span
+                    id="email"></span><br><br>
+                <input name="Address" placeholder="Address" id="text" style="margin-left: 50px;"><span
+                    id="textspan"></span><br><br>
+                <input type="text" placeholder="pincod" id="inp4" style="margin-left: 50px;"><span id="pin"></span><br><br>
+
+                <button onclick="check()" id="con" style="margin-left: 50px;">Confirm order</button>
+
+
+            </div>
+        </div>
+
+    </div>
+    <script>
+        let pat1 = /^[a-zA-Z]+$/
+        let pat2 = /^[0-9]{10}$/
+        let pat3 = /^[a-z0-9]+@gmail\.com+$/
+       
+        let pat4 = /^[0-9]{6}+$/
+        function check() {
+            let a = document.getElementById("inp1").value;
+            if (a == "") {
+                document.getElementById("name").innerHTML = "Cannot Empty"
+                document.getElementById("name").style.color = "red"
+            }
+            else if (!pat1.test(a)) {
+                document.getElementById("name").innerHTML = "Not valid"
+                document.getElementById("name").style.color = "red"
+            }
+            else {
+                document.getElementById("name").innerHTML = ""
+            }
+
+            // let b = document.getElementById("inp2").value;
+            // if (b == "") {
+            //     document.getElementById("number").innerHTML = "Cannot Empty"
+            //     document.getElementById("number").style.color = "red"
+            // }
+            // else if (!pat2.test(b)) {
+            //     document.getElementById("number").innerHTML = "Not valid"
+            //     document.getElementById("number").style.color = "red"
+            // }
+            // else {
+            //     document.getElementById("number").innerHTML = ""
+            // }
+            // let c = document.getElementById("inp3").value;
+            // if (c == "") {
+            //     document.getElementById("email").innerHTML = "Cannot Empty"
+            //     document.getElementById("email").style.color = "red"
+            // }
+            // else if (!pat3.test(c)) {
+            //     document.getElementById("email").innerHTML = "Not valid"
+            //     document.getElementById("email").style.color = "red"
+            // }
+            // else {
+            //     // document.getElementById("email").innerHTML=""
+            // }
+            // let d = document.getElementById("text").value;
+            // if (d == "") {
+            //     document.getElementById("textspan").innerHTML = "Cannot Empty"
+            //     document.getElementById("textspan").style.color = "red"
+
+            // }
+            // else {
+            //     document.getElementById("textspan").innerHTML = ""
+
+            // }
+            // let e=document.getElementById("inp4").value;
+            // if(e==""){
+            //     document.getElementById("pin").innerHTML="Cannot Empty"
+            // }
+            // else if(!pat4.test(e)){
+            //     document.getElementById("pin").innerHTML="Not valid"
+            // }
+
+
+
+        }
+    </script>
+</body>
+
+</html>
